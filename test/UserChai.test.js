@@ -2,9 +2,7 @@ import chai from "chai";
 import mongoose from "mongoose";
 import userModel from "../src/dao/models/User.js";
 
-await mongoose.connect(
-  "mongodb+srv://guillermofergnani:DBeXuiDCQMqLyMTa@51380.yhqtnxt.mongodb.net/pets"
-);
+await mongoose.connect("");
 
 const expect = chai.expect;
 

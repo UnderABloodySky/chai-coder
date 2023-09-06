@@ -4,9 +4,7 @@ import Assert from "assert";
 
 const assert = Assert.strict;
 
-await mongoose.connect(
-  "mongodb+srv://guillermofergnani:DBeXuiDCQMqLyMTa@51380.yhqtnxt.mongodb.net/pets"
-);
+await mongoose.connect("");
 
 describe("Test de consulta a todos los usuarios", () => {
   before(function () {
