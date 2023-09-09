@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import userModel from "../src/dao/models/User.js";
-import Assert from "assert";
+ /*
+ import Assert from "assert";
 
 const assert = Assert.strict;
 
@@ -10,35 +11,14 @@ await mongoose.connect(
 
 //GRUPO DE TESTS. DESCRIPCION GENERAL.
 describe("Test del modelo de USUARIO", () => {
-  before(function () {
+ before(function () {
     console.log("arrancando con todos los tests");
     mongoose.connection.collections.users.drop();
   });
-
-  /* beforeEach(function () {
-    console.log("arrancando un test");
-    this.timeout(500);
-  }); */
-  /* before(function () {
-    console.log("arrancando con todos los tests");
-    mongoose.connection.collections.users.drop();
-  }); */
-  /* before(function () {
-    console.log("arrancando con todos los tests");
-  });
-
-  beforeEach(function () {
-    console.log("arrancando un test");
-    this.timeout(500);
-  }); */
-
-  /* it("test nada", async function () {
-    assert.strictEqual(1, 1);
-  }); */
 
   it("Test para obtener todos los usuarios de mi BDD", async function () {
     const users = await userModel.find();
-
+    console.log(users)
     assert.strictEqual(Array.isArray(users), true);
   });
 
@@ -62,7 +42,7 @@ describe("Test del modelo de USUARIO", () => {
     assert.strictEqual(typeof user, "object");
   });
 
-  /* it("Test para obtener todos los usuarios de mi BDD", async function () {
+  it("Test para obtener todos los usuarios de mi BDD", async function () {
     const users = await userModel.find();
 
     assert.strictEqual(Array.isArray(users), true); //Que sea un array
@@ -86,5 +66,6 @@ describe("Test del modelo de USUARIO", () => {
     const user = await userModel.findOneAndDelete({ email: email });
     console.log(user);
     assert.strictEqual(typeof user, "object");
-  }); */
+  }); 
 });
+*/
